@@ -13,4 +13,12 @@ public class OperationsTest
     {
         Assert.Equal(_operations.sum(a, b), a + b);
     }
+
+
+
+    [Fact]
+    public void Sum_Should_Not_Work()
+    {
+        Assert.Equal(-1, _operations.sum(1, 1));
+    }
 }
